@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="invitation, littleart, undangan" />
+    <meta name="description" content="Undangan pernikahan SLUG pada TANGGAL" />
+    <title>Wedding Invitation SLUG</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+  </head>
+  <body>
+    
+    <!-- Cover undangan -->
+    <section id="cover">
+      <p>The Wedding of</p>
+      <h1 class="text-judul">Putra & Putri</h1>
+      <p>Kamis, 27 April 2023</p>
+      <div class="untuk">
+        <p>
+          <span>
+            Tamu 
+          </span>
+            di tempat
+        </p>
+      </div>
+      <button class="buka">Buka Undangan</button>
+    </section>
+    
+    <!-- Pembukaan -->
+    <section id="pembukaan">
+      <p data-aos="zoom-in">
+        <i>
+          Assalamu 'alaikum Wr. Wb.
+        </i>
+      </p>
+      <p data-aos="zoom-in">
+        Dengan memohon rahmat dan ridho Allah SWT, <br>
+          Mohon do'a restu Bapak/Ibu/Saudara/i dalam rangka melangsungkan pernikahan putra-putri kami:
+      </p>
+      <div class="img-couple">
+        <img src="assets/groom.jpg" alt="groom picture" data-aos="fade-left" />
+        <img src="assets/bride.jpg" alt="bride picture" data-aos="fade-right" />
+      </div>
+      <h3 class="text-couple" data-aos="fade-up">
+        Putra Setiawan
+      </h3>
+      <p data-aos="fade-down">Putra Bapak John Doe dan Ibu Jean Doe</p>
+      <p data-aos="zoom-in">Karawang - Jawa Barat</p>
+      <br>
+      <h3 class="amp-couple">&amp;</h3>
+      <br>
+      <h3 class="text-couple" data-aos="fade-up">
+        Putri Setiawati
+      </h3>
+      <p data-aos="fade-down">Putri Bapak James Doe dan Ibu Jeannie Doe</p>
+      <p data-aos="zoom-in">Karawang - Jawa Barat</p>
+    </section>
+    
+    <!-- Jadwal Acara -->
+    <section id="acara">
+      <h2 class="judul" data-aos="zoom-in-up">Akad Nikah</h2>
+      <div class="isi">
+        
+        <div class="hari" data-aos="flip-left">
+          <p>Kamis</p>
+          <p>08.00</p>
+        </div>
+        <div class="batas" data-aos="zoom-in"></div>
+        <div class="tanggal" data-aos="flip-right">
+          <p>27</p>
+          <p>April 2023</p>
+        </div>
+        
+      </div>
+      <h2 class="judul" data-aos="zoom-in-up">Resepsi</h2>
+      <div class="isi">
+        
+        <div class="hari" data-aos="flip-left">
+          <p>Kamis</p>
+          <p>10.00</p>
+        </div>
+        <div class="batas" data-aos="zoom-in"></div>
+        <div class="tanggal" data-aos="flip-right">
+          <p>27</p>
+          <p>April 2023</p>
+        </div>
+        
+      </div>
+      <p class="judul" data-aos="zoom-in-up">Jalan Raya Karawang Timur, Kabupaten Karawang, Jawa Barat</p>
+      
+    </section>
+    
+    <!-- Maps -->
+    <section id="maps">
+      <h2 class="m-judul">Location</h2>
+      <div id="m-cont">
+        
+      <div id="m-countdown">Countdown Starts...</div>
+      
+      <div id="m-peta">
+      </div>
+      <button id="m-btn">Buka Peta</button>
+      
+      </div>
+    </section>
+    
+    
+    <!-- Timeline -->
+    <section id="timeline">
+      <h3 class="tm-judul" data-aos="zoom-in">Our Story</h3>
+      <div class="tm-container">
+        
+        <div class="tm-part" data-aos="flip-up" data-aos-delay="0">
+          <h3 class="tm-judul">
+            First Meet
+          </h3>
+          <p class="tm-tanggal">
+            27 April 2023
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed pharett molestie.
+          </p>
+        </div>
+        <div class="tm-part" data-aos="flip-up" data-aos-delay="0">
+          <h3 class="tm-judul">
+            Engagement
+          </h3>
+          <p class="tm-tanggal">27 September 2023</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed pharetra neque, vel aliquam dolor. Aenean et ipsum sit amet nulla lobortis cursus. Suspendisse id erat vel elit tempus congue non at nisl. Sed eget turpis nulla. Sed vitae nisl sed odio tincidunt gravida sit amet non urna. Vivamus tristique at nulla sed eleifend. Nulla facilisi. Donec a quam eget mauris tincidunt molestie.
+          </p>
+        </div>
+        <div class="tm-part" data-aos="flip-up" data-aos-delay="0">
+          <h3 class="tm-judul">
+            Prewedding
+          </h3>
+          <p class="tm-tanggal">27 September 2023</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed pharetra neque, vel aliquam dolor. Aenean et ipsum sit amet nulla lobortis cursus. Suspendisse id erat vel elit tempus congue non at nisl. Sed eget turpis nulla. Sed vitae nisl sed odio tincidunt gravida sit amet non urna. Vivamus tristique at nulla sed eleifend. Nulla facilisi. Donec a quam eget mauris tincidunt molestie.
+          </p>
+        </div>
+        <div class="tm-part" data-aos="flip-up" data-aos-delay="0">
+          <h3 class="tm-judul">
+            Wedding
+          </h3>
+          <p class="tm-tanggal">27 September 2023</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed pharetra neque, vel aliquam dolor. Aenean et ipsum sit amet nulla lobortis cursus. Suspendisse id erat vel elit tempus congue non at nisl. Sed eget turpis nulla. Sed vitae nisl sed odio tincidunt gravida sit amet non urna. Vivamus tristique at nulla sed eleifend. Nulla facilisi. Donec a quam eget mauris tincidunt molestie.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- Galery -->
+    <section id="galeri">
+      <h2 class="g-judul">Gallery of Love</h2>
+      <div class="g-foto-cont">
+         
+        <div class="g-foto-pre" style="">
+          
+        </div>
+        
+        <div class="g-list">
+          <img class="g-foto g-foto-active" src="assets/1.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/2.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/3.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/1.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/2.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/3.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/1.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/2.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/3.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/1.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/2.jpg" alt="foto-mempelai" />
+          <img class="g-foto" src="assets/3.jpg" alt="foto-mempelai" />
+          
+        </div>
+        <p class="g-count"></p>
+      </div>
+    </section>
+    
+    
+    
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
